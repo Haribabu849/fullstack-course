@@ -1,0 +1,26 @@
+/* font-size - to increase or decrease size of the text */
+
+/* font-weight -boldness  100-900*/
+
+/* font-style -italic normal */
+
+/* font-family - to change the font  */
+
+p {
+  font-size: 32px;
+  font-size: 48px;
+  font-size: 10px;
+  font-size: medium;
+  font-size: 38.1px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 100;
+}
+i {
+  font-style: normal;
+  font-family: monospace;
+}

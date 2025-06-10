@@ -1,0 +1,93 @@
+/* text-align */
+/* left right center start end justify */
+
+h1 {
+  text-align: left;
+  text-align: center;
+}
+p {
+  text-align: left;
+  text-align: start;
+  /* text-align: justify; */
+}
+
+/* letter spacing */
+/* letter spacing can have negative values to contract */
+h1 {
+  letter-spacing: 4px;
+  /* letter-spacing: -1px; */
+}
+
+/* word spacing */
+/* to have space between words */
+p {
+  word-spacing: 10px;
+  letter-spacing: 4px;
+}
+
+/* line-height */
+
+p {
+  line-height: 40px;
+}
+
+/* text-transform */
+/* uppercase, lowercase,capitalize */
+h1 {
+  text-transform: uppercase;
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
+p {
+  text-transform: capitalize;
+  text-transform: uppercase;
+  text-transform: lowercase;
+}
+
+/* text-decoration-line */
+/* underline, line-through, overline,none */
+
+/* text-decoration-thickness */
+
+/* text-decoration-style */
+
+/* text-decoration-color */
+/* text-underline-offset */
+
+h1 {
+  text-decoration-line: underline;
+  text-decoration-line: line-through;
+  text-decoration-line: overline;
+  /* text-decoration-line: none; */
+  text-decoration-line: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-style: solid;
+  /* text-decoration-style: dashed;
+  text-decoration-style: dotted;
+  text-decoration-style: double; */
+  /*text-decoration-style: wavy;
+  text-decoration-style: solid; */
+  text-decoration-color: rgb(107, 22, 206);
+  text-underline-offset: 5px;
+  text-decoration: underline double rgb(107, 22, 206) 4px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+/* list-style-type - to add the type of each list */
+
+ul li {
+  list-style-type: "$";
+  list-style-type: disc;
+  border: 1px solid black;
+  list-style-position: inside;
+
+  /* list-style-type: "$1  "; */
+  list-style-image: url("");
+}
+
+ol li {
+  list-style-type: lower-alpha;
+}

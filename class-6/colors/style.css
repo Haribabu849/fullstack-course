@@ -1,0 +1,46 @@
+/* colors */
+
+/* named colors */
+
+h1 {
+  color: magenta;
+  color: blue;
+  color: white;
+  color: red;
+  color: green;
+}
+
+/* hex colors */
+
+/* #abc111 */
+/* # a-f 0-9 */
+
+h2 {
+  color: #2e75d2;
+}
+/* rgb colors */
+/* 0-255 */
+
+h3 {
+  color: rgb(255, 0, 0);
+}
+
+/* rgba colors */
+/* 0-1, examples-0.1,0.2 */
+/* 0-fully transparent , 1- fully opaque*/
+.rgba {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+/* hsl colors */
+/* hue->0-360,saturation->0-100%,lightness->0-100% */
+
+h4 {
+  color: hsl(360, 100%, 40%);
+}
+
+/* hsla colors */
+/* alpha - opacity */
+h4 {
+  color: hsla(360, 100%, 40%, 0.5);
+}
