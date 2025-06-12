@@ -1,6 +1,8 @@
 /* colors */
 
 /* named colors */
+/* background-color- to add color in background */
+/* color- to add text color */
 
 h1 {
   color: magenta;
@@ -8,6 +10,7 @@ h1 {
   color: white;
   color: red;
   color: green;
+  background-color: aqua;
 }
 
 /* hex colors */

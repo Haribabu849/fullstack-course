@@ -83,9 +83,12 @@ ul li {
   list-style-type: disc;
   border: 1px solid black;
   list-style-position: inside;
+  background-color: rgb(195, 74, 213);
+  color: rgb(81, 55, 208);
 
   /* list-style-type: "$1  "; */
-  list-style-image: url("");
+  list-style-image: url("./virat.jpg");
+  list-style-type: numeric;
 }
 
 ol li {
