@@ -1,0 +1,116 @@
+/* selectors */
+/* universal selector */
+/* sekects all elements */
+/* * {
+  color: blue;
+} */
+/* selects all elements of specific element type */
+
+/* p {
+  color: green;
+} */
+/* h1 {
+  color: aqua;
+} */
+/* selects all the classes */
+
+/* .class-selector {
+  color: red;
+} */
+/* selects specific id element */
+
+/* #id-selector {
+  color: purple;
+} */
+
+/* span {
+  color: orange;
+  font-size: large;
+  border: 2px solid black;
+}
+h1 {
+  color: orange;
+  font-size: large;
+  border: 2px solid black;
+}
+p {
+  color: orange;
+  font-size: large;
+  border: 2px solid black;
+} */
+
+/* grouping selector to group two or more lements have same styles */
+
+/* span,
+#id-selector,
+.class-selector {
+  color: orange;
+  font-size: large;
+  border: 2px solid black;
+} */
+
+/* combinators */
+/* descendant selector */
+/* selects all elements that are descendants of a specific element */
+/* div p {
+  color: red;
+}*/
+/* div p span {
+  color: blue;
+  text-decoration: underline;
+  border: 2px solid black;
+} */
+
+/* child selector */
+/* selects all elements that are direct children of a specific element */
+/* .parent > p {
+  color: blue;
+  background-color: yellow;
+} */
+/* adjacent-sibling selector */
+/* selects an element that is immediately preceded by a specific element */
+/* 
+h1 + p {
+  color: green;
+} */
+
+/* general sibling selector */
+/* selects all elements that are siblings of a specific element */
+/* h1 ~ p {
+  color: red;
+} */
+
+/* attribute selector */
+/* selects elements based on their attributes */
+/* [target] {
+  color: green;
+} */
+/* [class] {
+  color: blue;
+  background-color: yellow;
+} */
+/* = checks for complete equality */
+/* [target="_blanks"] {
+  color: red;
+  background-color: pink;
+} */
+/* [class="some-class"] {
+  color: red;
+  background-color: rgb(0, 191, 255);
+} */
+
+/* ^= checks for beginning of value */
+/* [class^="s"] {
+  color: red;
+  background-color: rgb(0, 191, 255);
+} */
+/* $= checks for end of value */
+/* [href$=".com"] {
+  color: blue;
+  background-color: yellow;
+} */
+/* *= checks for value anywhere in the attribute */
+[class*="some"] {
+  color: green;
+  background-color: pink;
+}

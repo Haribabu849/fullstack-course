@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <style>
+    /* :first-child -selects first children elements */
+    /* li:first-child {
+      color: red;
+    } */
+    /* p:first-child {
+      color: red;
+    } */
+
+    /* :last-child - selects last children elements */
+    /* li:last-child {
+      color: blue;
+    } */
+    /* p:last-child {
+      color: blue;
+    } */
+
+    /* :nth-child(n) - selects nth child elements */
+    /* li:nth-child(1) {
+      color: green;
+    } */
+
+    /* nth-of-type, filters by element type */
+    /* li:nth-of-type(2) {
+      color: orange;
+    }
+    p:nth-of-type(2) {
+      color: purple;
+    }
+    span:nth-of-type(2) {
+      color: pink;
+    } */
+    /* :empty */
+    /* div:empty {
+      background-color: rgb(247, 28, 28);
+      width: 200px;
+
+      height: 100px;
+    } */
+
+    /* :hover when hover over an element*/
+    button {
+      background-color: lightblue;
+      padding: 10px;
+      border: 2px solid rgb(242, 22, 22);
+    }
+    /* button:hover {
+      background-color: rgb(242, 22, 22);
+      color: white;
+      cursor: pointer;
+      cursor: not-allowed;
+    } */
+    a:hover {
+      color: red;
+      text-decoration: none;
+    }
+    a:active {
+      color: green;
+      text-decoration: none;
+    }
+    button:active {
+      background-color: rgb(16, 5, 93);
+      color: white;
+    }
+    a:visited {
+      color: rgba(128, 0, 0, 0.562);
+      background-color: lightgreen;
+    }
+    a:link {
+      color: black;
+      background-color: aqua;
+    }
+    input:focus {
+      background-color: lightyellow;
+      color: blue;
+    }
+    input:checked {
+      background-color: lightgreen;
+      color: black;
+      accent-color: red;
+    }
+    button:disabled {
+      background-color: lightgray;
+      color: rgb(249, 22, 22);
+      cursor: not-allowed;
+    }
+    input:disabled {
+      background-color: rgb(255, 6, 6);
+      color: rgb(249, 22, 22);
+      cursor: not-allowed;
+    }
+    input:enabled {
+      background-color: lightgreen;
+      color: black;
+    }
+    input:required {
+      background-color: lightblue;
+      color: rgb(119, 0, 255);
+    }
+    input:invalid {
+      color: rgb(255, 255, 255);
+    }
+    input:valid {
+      color: rgb(243, 0, 0);
+    }
+  </style>
+  <body>
+    <button disabled>submit</button>
+    <button>reset</button>
+    <a href="https://www.dxc.com" target="_blank"> go to google</a>
+    <a href="https://www.udemy.com" target="_blank"> go to google</a>
+    <a href="https://www.udem.com" target="_blank"> go to google</a>
+    <input type="text" />
+    <input type="number" class="number" />
+    <input type="color" />
+    <input type="checkbox" name="" id="" checked />
+    <input type="checkbox" />
+    <input type="text" disabled />
+    <input type="text" required />
+    <input type="email" name="" id="" />
+    <input type="number" min="10" max="20" />
+    <!-- <div>
+      <p>para 1</p>
+      <span>span</span>
+      <p>para 2</p>
+    </div> -->
+    <!-- <p>para 1</p>
+    <p>para 2</p>
+    <p>para 3</p>
+    <div>
+      <p>para4</p>
+      <p>para5</p>
+      <p>para6</p>
+    </div>
+    <h1></h1>
+    <div></div>
+    <div>some content</div>
+    <div></div> -->
+    <!-- <div>
+      <p>para 1</p>
+      <span>span</span>
+      <h1>askhfksdhf</h1>
+      <span>span 2</span>
+      <p>para 2</p>
+      <p>para 2</p>
+      <p>para 2</p>
+      <p>para 2</p>
+    </div> -->
+    <!-- <ul>
+      <li>first item</li>
+      <li>second item</li>
+      <li>third item</li>
+      <li>fourth item</li>
+    </ul> -->
+
+    <!-- :nth-child(n) - selects nth child elements -->
+    <!-- <ul>
+      <li>first item</li>
+      <li>second item</li>
+      <li>third item</li>
+      <li>fourth item</li>
+      <li>fifth item</li>
+    </ul> -->
+
+    <!-- :nth-of-type(n) - selects nth child of a specific type -->
+  </body>
+</html>
