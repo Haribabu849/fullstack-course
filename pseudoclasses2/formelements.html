@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input/Form Pseudo-Classes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      input,
+      select,
+      textarea {
+        display: block;
+        margin: 10px 0 20px;
+        padding: 8px;
+      }
+
+      /* :focus
+       What it does: Styles the element when it's focused (clicked or tabbed into) */
+      input:focus,
+      textarea:focus {
+        border: 2px solid blue;
+        outline: none;
+      }
+
+      /* :required
+       What it does: Styles input elements with the "required" attribute */
+      /* input:required {
+        background-color: #514829;
+      } */
+
+      /* :optional
+       What it does: Styles input elements without the "required" attribute */
+      /* input:optional {
+        border: 1px solid #b41a1a;
+        background-color: gray;
+      } */
+
+      /* :disabled
+       What it does: Styles input elements that are disabled */
+      /* input:disabled {
+        background-color: #cf1717;
+        color: #4244d0;
+      } */
+
+      /* :enabled
+       What it does: Styles input elements that are not disabled */
+      /* input:enabled {
+        font-weight: bold;
+        color: blue;
+      } */
+
+      /* :read-only
+       What it does: Styles elements with the readonly or disabled attribute */
+      /* input:read-only {
+        background-color: #15497d;
+      } */
+
+      /* :checked
+       What it does: Styles checkboxes or radio buttons when checked */
+      /* input:checked {
+        accent-color: rgb(231, 7, 7);
+        border: 2px solid green;
+        outline: 2px solid darkgreen;
+      } */
+
+      /* :valid
+       What it does: Styles inputs with valid content (based on type/constraints) */
+      /* input:valid {
+        background-color: #25da4f;
+      } */
+
+      /* :invalid
+       What it does: Styles inputs with invalid content */
+      /* input:invalid {
+        background-color: #df8990;
+      } */
+
+      /* :in-range
+       What it does: Styles inputs whose values fall within a valid range */
+      /* input:in-range {
+        border: 2px solid rgb(255, 21, 25);
+      } */
+
+      /* :out-of-range
+       What it does: Styles inputs whose values fall outside the valid range */
+      /* input:out-of-range {
+        border: 2px solid rgb(255, 0, 230);
+      } */
+
+      /* :placeholder-shown
+       What it does: Styles inputs that are currently showing their placeholder */
+      /* input:placeholder-shown {
+        background-color: #0d1d51;
+        border: 2px solid #ee0b0b;
+        font-weight: bold;
+      } */
+
+      /* :checked + label
+       Bonus: style label when its radio or checkbox is checked */
+      /* input[type="checkbox"]:checked + label,
+      input[type="radio"] + label {
+        color: rgb(11, 227, 11);
+        font-weight: bold;
+      } */
+
+      /* link,visited */
+      /* a:link {
+        color: blue;
+        text-decoration: none;
+      }
+      a:visited {
+        color: purple;
+        text-decoration: none;
+      } */
+    </style>
+  </head>
+  <body>
+    <a href="https:www.example.com"> go to example</a>
+    <h2>Form/Input Pseudo-Class Demonstration</h2>
+
+    <form>
+      <label for="name">Name (Required):</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Enter your name"
+      />
+
+      <label for="email">Email (Optional):</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@mail.com"
+        required
+      />
+
+      <label for="age">Age (Range 18-99):</label>
+      <input type="number" id="age" name="age" required min="18" max="99" />
+
+      <label for="readonly">Readonly Input:</label>
+      <input type="text" id="readonly" value="Can't edit me" readonly />
+
+      <label for="disabled">Disabled Input:</label>
+      <input type="text" id="disabled" value="I'm disabled" disabled />
+
+      <label>Gender:</label>
+      <input type="radio" name="gender" id="male" checked />
+      <label for="male">Male</label><br />
+      <input type="radio" name="gender" id="female" />
+      <label for="female">Female</label>
+
+      <br />
+
+      <label>Subscribe:</label>
+      <input type="checkbox" id="subscribe" />
+      <label for="subscribe">Yes</label>
+
+      <br />
+
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        rows="4"
+        placeholder="Type your message..."
+      ></textarea>
+
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

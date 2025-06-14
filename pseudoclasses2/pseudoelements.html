@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Elements Demo</title>
+    <style>
+      /* ::before
+       Inserts content before the actual content */
+      .before-example::before {
+        content: "before ✔ ";
+        color: green;
+      }
+
+      /* ::after
+       Inserts content after the actual content */
+      .after-example::after {
+        content: " something";
+        color: blue;
+      }
+
+      /* ::first-letter
+       Styles the first letter of a paragraph */
+      p::first-letter {
+        font-size: 40px;
+        color: red;
+      }
+
+      /* ::first-line
+       Styles the first line of a paragraph */
+      p::first-line {
+        font-weight: bold;
+        color: navy;
+      }
+
+      /* ::placeholder
+       Styles the placeholder text */
+      input::placeholder {
+        color: rgb(12, 241, 39);
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 10px;
+      }
+
+      /* ::selection
+       Styles selected text (when user highlights) */
+      ::selection {
+        background-color: rgb(182, 55, 55);
+        color: black;
+        text-decoration: underline;
+      }
+
+      /* ::marker
+       Styles the bullet/number in lists */
+      li::marker {
+        color: purple;
+        font-size: 20px;
+      }
+
+      /* ::file-selector-button
+       Styles the file input button */
+      input.file[type="file"]::file-selector-button {
+        background-color: teal;
+        color: white;
+        border: 2px solid black;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="before-example">This uses ::before</h2>
+    <h2 class="after-example">This uses ::after</h2>
+
+    <p class="first-letter-example">
+      This paragraph demonstrates the ::first-letter pseudo-element. Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Quam exercitationem rem
+      sapiente omnis ullam incidunt temporibus voluptatem aut nobis soluta
+      commodi, esse, sed cumque! Ratione laudantium magnam magni recusandae
+      illo?
+    </p>
+    <p class="first-line-example">
+      This paragraph shows how the ::first-line pseudo-element applies only to
+      the first line of visible text. Add more content here to see it in action.
+    </p>
+
+    <input type="text" placeholder="Type your name here..." />
+
+    <br /><br />
+
+    <p>
+      Select some of this text to see the ::selection pseudo-element in action!
+    </p>
+
+    <ul>
+      <li>Item One</li>
+      <li>Item Two</li>
+    </ul>
+
+    <br />
+
+    <input type="file" />
+    <input type="file" class="file" />
+  </body>
+</html>

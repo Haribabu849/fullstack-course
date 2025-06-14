@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Structural Pseudo-Classes</title>
+    <style>
+      /* :first-child
+       What it does: Styles the first child of its parent */
+      li:first-child {
+        color: green;
+      }
+
+      /* :last-child
+       What it does: Styles the last child of its parent */
+      li:last-child {
+        color: red;
+      }
+
+      /* :nth-child(n)
+       What it does: Styles the nth child (1-based index) */
+      li:nth-child(2) {
+        font-weight: bold;
+      }
+
+      /* :only-child
+       What it does: Styles an element that is the only child of its parent */
+      p:only-child {
+        background-color: rgb(216, 216, 14);
+        padding: 5px;
+      }
+
+      /* :first-of-type
+       What it does: Styles the first element of its type among siblings */
+      section p:first-of-type {
+        color: blue;
+      }
+
+      /* :last-of-type
+       What it does: Styles the last element of its type among siblings */
+      section p:last-of-type {
+        color: purple;
+      }
+
+      /* :nth-of-type(n)
+       What it does: Styles the nth element of its type among siblings */
+      section p:nth-of-type(2) {
+        font-style: italic;
+      }
+
+      /* :only-of-type
+       What it does: Styles the only element of its type among siblings */
+      /* div.only-of-type p:only-of-type {
+        background-color: lightblue;
+      } */
+      /* unimportant */
+
+      /* :empty
+       What it does: Styles elements with no children  (including text) */
+      div.empty-box:empty {
+        height: 30px;
+        width: 100%;
+        background-color: rgb(202, 38, 38);
+        border: 1px dashed #999;
+        margin-top: 10px;
+      }
+
+      /* :not(selector)
+       What it does: Excludes elements matching a given selector */
+      li:not(#skip) {
+        border-bottom: 1px solid #ed1f1f;
+      }
+    </style>
+  </head>
+  <body>
+    <p>first p</p>
+    <p>second p</p>
+    <h2>Structural Pseudo-Classes Demo</h2>
+
+    <h3>1. Child Selectors</h3>
+    <ul>
+      <li>First Item (first-child)</li>
+      <li>Second Item (nth-child(2))</li>
+      <li class="skip" id="skip">Third Item (excluded with :not)</li>
+      <li class="skip">Fourth Item</li>
+      <li>Last Item (last-child)</li>
+    </ul>
+
+    <h3>2. Only Child</h3>
+    <div class="only">
+      <p>I am the only child (only-child)</p>
+    </div>
+    <div>
+      <p>I am not the only child</p>
+      <p>I am another child</p>
+    </div>
+
+    <div>
+      <p>I am the first of two paragraphs</p>
+      <p>I am the second paragraph</p>
+    </div>
+
+    <h3>3. Type-based Selectors</h3>
+    <section>
+      <p>First paragraph (first-of-type)</p>
+      <p>Second paragraph (nth-of-type(2))</p>
+      <p>Third paragraph</p>
+      <p>Last paragraph (last-of-type)</p>
+    </section>
+
+    <h3>4. Only-of-Type</h3>
+    <div class="only-of-type">
+      <span>I am the only &lt;span&gt; (only-of-type)</span>
+      <p>Another type</p>
+      <!-- <span>another span</span> -->
+    </div>
+
+    <h3>5. Empty</h3>
+    <div class="empty-box"></div>
+    <div class="empty-box">N</div>
+    <!-- Empty div styled with :empty -->
+  </body>
+</html>

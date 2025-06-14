@@ -1,0 +1,20 @@
+/* :hover
+   What it does: Applies styles when the mouse pointer is over the element */
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+/* :focus
+   What it does: Applies styles when the element has focus (keyboard or mouse) */
+input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+/* :active
+   What it does: Applies styles when the element is being activated (clicked) */
+button:active {
+  background-color: yellow;
+  transform: scale(0.98);
+}

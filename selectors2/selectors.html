@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector Examples with Comments</title>
+    <style>
+      /* 1. Universal Selector
+       Applies the rule to ALL elements on the page */
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* 2. Type Selector
+       Targets all <p> elements */
+      p {
+        color: darkblue;
+      }
+
+      /* 3. Class Selector
+       Targets any element with class="note" */
+      .note {
+        font-style: italic;
+        color: green;
+      }
+
+      /* 4. ID Selector
+       Targets the element with id="main" */
+      #main {
+        background-color: #f0f0f0;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+
+      /* 5. Group Selector
+       Targets both h1 and h2 elements */
+      h1,
+      h2 {
+        color: navy;
+      }
+
+      /* 6. Combinator Selectors */
+
+      /* Descendant Selector: targets any <p> inside a <div> (at any depth) */
+      div p {
+        background-color: #22a1dc;
+      }
+
+      /* Child Selector: targets <li> that are direct children of <ul> */
+      ul > li {
+        color: darkred;
+      }
+
+      /* Adjacent Sibling Selector: targets the first <p> immediately after an <h2> */
+      h2 + p {
+        font-weight: 100;
+        font-style: italic;
+      }
+
+      /* General Sibling Selector: targets all <p> that follow an <h2>, even if not immediately */
+      h2 ~ p {
+        font-size: 40px;
+      }
+
+      /* 7. Attribute Selectors */
+
+      /* [attr]: targets any element with the 'required' attribute */
+      input[required] {
+        border: 2px solid red;
+      }
+
+      /* [attr="value"]: targets input with type exactly equal to "email" */
+      input[type="email"] {
+        background-color: #fff8dc;
+      }
+
+      /* [attr~="value"]: targets elements with class attribute that contains 'warning' as a separate word */
+      div[class~="warning"] {
+        color: orange;
+      }
+
+      /* [attr^="value"]: targets <a> elements where href starts with "https" */
+      a[href^="https"] {
+        color: green;
+      }
+
+      /* [attr$="value"]: targets <img> elements where src ends with ".png" */
+      img[src$=".png"] {
+        width: 100px;
+        border: 2px solid purple;
+      }
+
+      /* [attr*="value"]: targets <a> elements where href contains "login" anywhere */
+      a[href*="login"] {
+        text-decoration: underline;
+      }
+
+      /* combined selector */
+      b.bold {
+        color: red;
+      }
+      i.bold {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <b class="bold">bold text</b>
+    <b>another bold text</b>
+    <i class="bold">italic text</i>
+    <h1>CSS Selector Demo</h1>
+
+    <h2>Subheading</h2>
+
+    <!-- Type Selector -->
+    <p>This is a simple paragraph.</p>
+
+    <!-- Class Selector -->
+    <p class="note">This paragraph has the class 'note'.</p>
+    <h2 class="note">This heading has the class 'note'.</h2>
+
+    <!-- ID Selector -->
+    <div id="main">
+      <p>This paragraph is inside a div with ID "main".</p>
+    </div>
+
+    <!-- Descendant + Class Attribute Test -->
+    <div>
+      <p>Descendant paragraph inside a div.</p>
+      <p class="warning notice">
+        This div has multiple classes including 'warning'.
+      </p>
+    </div>
+
+    <!-- Child Selector -->
+    <ul>
+      <li>Direct child 1</li>
+      <li>Direct child 2</li>
+      <li>Direct child 3</li>
+      <div>
+        <ol>
+          <li>nested child</li>
+        </ol>
+      </div>
+    </ul>
+
+    <!-- Sibling Selectors -->
+    <h2>Heading before siblings</h2>
+    <p>Adjacent sibling to h2</p>
+    <p>General sibling to h2</p>
+
+    <!-- Attribute Selectors -->
+    <input type="text" required placeholder="Required field" />
+    <input type="email" placeholder="Email field" />
+
+    <!-- Class Attribute with Space -->
+    <div class="info warning">This has class 'warning'</div>
+
+    <!-- Language Attribute -->
+    <p lang="en-US">This paragraph is in English.</p>
+
+    <!-- Starts With Attribute -->
+    <a href="https://example.com">HTTPS link</a><br />
+
+    <!-- Contains Attribute -->
+    <a href="https://example.com/login">Login link</a><br />
+
+    <!-- Ends With Attribute -->
+    <img src="logo.png" alt="Logo" />
+
+    <div>
+      <p>
+        This is a demonstration of various CSS selectors and their applications.
+        The styles are applied based on the selectors defined in the
+        <code>style</code> tag.
+      </p>
+      <div>
+        <p>
+          You can see how different selectors target elements based on their
+          type, class, ID, attributes, and relationships to other elements.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
