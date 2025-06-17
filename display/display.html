@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* block - width full always starts in new line */
+      .block {
+        background-color: cyan;
+        width: 200px;
+        height: 300px;
+        margin-top: 100px;
+      }
+
+      /* inline -necessary width , (width,height doesn't work), padding- overlap, margin works on left right and doesn't work on top and bottom */
+      .inline {
+        background-color: deeppink;
+        width: 200px;
+        height: 200px;
+        font-size: 24px;
+        margin-top: 100px;
+        border: 1px solid black;
+        padding: 50px;
+        display: block;
+      }
+
+      .inline-block {
+        /* background-color: rgba(20, 238, 180, 0.774); */
+        padding: 50px;
+        border: 2px solid black;
+        display: inline-block;
+        margin: 10px;
+        width: 100px;
+        height: 200px;
+      }
+      h1 {
+        display: inline-block;
+      }
+
+      h1.hidden {
+        background-color: blueviolet;
+        width: 200px;
+        height: 300px;
+        /* visibility: hidden; */
+        display: none;
+      }
+
+      #show:hover + h1.hidden {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="block">display-block</h1>
+    <h1>another h1</h1>
+    <a class="inline">display-inline</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas corporis
+      minima, cum suscipit omnis tenetur iusto labore ratione temporibus
+      cupiditate maxime
+      <span class="inline-block"> display-inline-block </span> ducimus, beatae
+      quos! Et error cum illo perferendis ratione. Lorem ipsum dolor sit amet
+      consectetur, adipisicing elit. Maiores adipisci, soluta amet ratione
+      distinctio qui porro placeat quasi eaque ad. Autem dolores minima tempora
+      exercitationem cumque ipsa voluptatum, aperiam ipsum!
+    </p>
+
+    <div id="show">show the hidden heading</div>
+
+    <h1 class="hidden">Hidden</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+      culpa, laborum temporibus iure ut illo eum modi! Officia enim, ullam vel,
+      illum nobis ut molestiae minima doloremque possimus, blanditiis veniam?
+    </p>
+  </body>
+</html>

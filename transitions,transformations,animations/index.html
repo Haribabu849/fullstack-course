@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        width: 100px;
+        height: 100px;
+        background-color: cyan;
+        border: 2px solid black;
+        box-shadow: 3px 3px 4px gray, 4px 4px 5px rgb(168, 29, 52);
+        border-radius: 10px;
+        /* transition: transform 0.3s ease-in 0s; */
+        /* transition: border-radius 0.5s ease-in-out 0s, transform 0.5s ease-in 0s; */
+      }
+      .first {
+        /* margin-left: 10px; */
+        transform: translate(10px, -10px);
+        /* transform: translateX(10px);
+        transform: translateY(10px); */
+      }
+
+      .second {
+        transform: rotate(90deg);
+      }
+
+      .third {
+        margin: auto;
+      }
+
+      .third:hover {
+        transform: scale(3);
+        transform-origin: top;
+      }
+
+      button {
+        color: black;
+        text-transform: uppercase;
+        padding: 10px 15px;
+        background-color: cyan;
+        box-shadow: 4px 4px 6px black;
+        /* transition: background-color 0.5s ease 0s,
+          box-shadow 0.5s ease-in-out 0s, border-radius 2s ease-in 0s,
+          transform 0.5s ease 0s; */
+        transition: transform 2s ease-in-out 1s;
+        transform-origin: left;
+      }
+
+      button:hover {
+        background-color: pink;
+        cursor: pointer;
+        box-shadow: 2px 2px 4px black;
+        border-radius: 10px;
+        transform: scaleX(2);
+      }
+
+      img {
+        opacity: 0.1;
+        transition: opacity 0.5s linear 0s;
+        border: 10px solid red;
+        transition: border 1s linear 0s;
+        animation: rotate 2s linear 0s 2;
+      }
+
+      img:hover {
+        opacity: 1;
+        cursor: pointer;
+        border-color: black;
+      }
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+          opacity: 0;
+        }
+        to {
+          transform: rotate(360deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes identifier {
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="first"></h1>
+    <h1 class="second"></h1>
+    <h1 class="third"></h1>
+
+    <button>submit</button>
+
+    <img src="./virat.jpg" alt="" />
+  </body>
+</html>

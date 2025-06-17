@@ -1,0 +1,41 @@
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* text-shadow 1- x-offset, 2-y-offset, 3-blur-radius 4-color */
+
+h1 {
+  color: #285d66;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  text-shadow: -2px -2px 4px rgb(181, 40, 40), 2px 2px 5px rgb(0, 0, 0),
+    5px 2px 10px rgb(132, 27, 27);
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  border: 2px solid black;
+  width: 200px;
+  margin: 10px auto;
+  box-shadow: 2px 2px 5px red, -2px -2px 3px cyan;
+}
+
+/* border-radius 1- top-left 2- top-right 3- bottom-right 4- bottom-left */
+
+h2 {
+  /* border-radius: 5px 10px 15px 20px;
+  border-radius: 10px; */
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+h3 {
+  width: 300px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 4000px;
+}
