@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
       h1 {
-        width: 100px;
+        width: 1000px;
         height: 100px;
         background-color: cyan;
         border: 2px solid black;
@@ -23,7 +23,16 @@
       }
 
       .second {
-        transform: rotate(90deg);
+        /* transform: rotate(90deg); */
+        transform: rotateX(0deg);
+        transition: all 2s linear 0s;
+
+        transform-origin: right;
+      }
+
+      .second:hover {
+        transform: rotateZ(360deg);
+        transform: scale(1.2);
       }
 
       .third {
@@ -32,7 +41,6 @@
 
       .third:hover {
         transform: scale(3);
-        transform-origin: top;
       }
 
       button {
@@ -83,15 +91,19 @@
 
       @keyframes identifier {
       }
+      /* h1 {
+        background-image: linear-gradient(to left, pink, cyan 10%, black 50%);
+      } */
     </style>
   </head>
   <body>
     <h1 class="first"></h1>
-    <h1 class="second"></h1>
+    <h1 class="second">amarnath</h1>
     <h1 class="third"></h1>
 
     <button>submit</button>
 
     <img src="./virat.jpg" alt="" />
+    <h1></h1>
   </body>
 </html>
