@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
+    />
+
+    <style>
+      h1 {
+        background-color: orange;
+        font-size: 40px;
+      }
+
+      @media screen and (max-width: 768px) {
+        h1 {
+          background-color: cyan;
+          font-size: 20px;
+          width: 40%;
+        }
+      }
+
+      @media screen and (max-width: 550px) {
+        h1 {
+          background-color: rgb(255, 0, 0);
+          font-size: 20px;
+          width: 40%;
+        }
+      }
+
+      /* @media screen and (min-width: 1000px) {
+        h1 {
+          background-color: red;
+          font-size: 50px;
+        }
+      } */
+
+      .parent {
+        display: grid;
+        border: 2px solid black;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+        width: 1000px;
+      }
+
+      @media screen and (max-width: 800px) {
+        .parent {
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 1fr 1fr;
+        }
+      }
+      @media screen and (max-width: 1200px) {
+        .parent {
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: 1fr;
+        }
+      }
+
+      .parent p {
+        background-color: cyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>media queries</h1>
+      <i class="fa-solid fa-image"></i>
+      <i class="fa-solid fa-cloud" style="color: red"></i>
+      <i class="fa-solid fa-cloud" style="color: #63e6be"></i>
+
+      <div class="parent">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+          facilis quisquam ullam atque, itaque dolorem, quasi ut dignissimos
+          fugiat minima veritatis eligendi rem recusandae illum in quis
+          corrupti. Qui, repellat.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere,
+          velit, optio est deleniti molestias ad porro dicta dolore ipsa
+          exercitationem inventore necessitatibus impedit quas rerum quibusdam
+          voluptatibus enim? Tenetur, iusto.
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia
+          eveniet unde expedita, quas quo dolorem sed eos architecto ea. Ut quos
+          dolorum explicabo dicta possimus quisquam quod rerum sint. Voluptate?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
