@@ -377,11 +377,11 @@ p {
 }
 
 .center-image {
-  width: 80%;
+  width: 70%;
   height: auto;
   position: absolute;
   top: 53%;
-  left: 10.2%;
+  left: 15.2%;
   transform: translateY(-50%);
 }
 
