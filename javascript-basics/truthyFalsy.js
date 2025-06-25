@@ -24,7 +24,9 @@ if (!cartItems) {
 }
 
 let userid = 0;
+let userName = "hari";
 let anotherUserId = 1;
+let anotherUserName = "amar";
 if (userid) {
   console.log("access this page");
 }
