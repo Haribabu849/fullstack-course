@@ -11,7 +11,7 @@
 //   console.log("just another day");
 // }
 
-let day = 2;
+let day = "monday,tuesday";
 
 // switch ===
 // default similar to else
