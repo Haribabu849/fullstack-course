@@ -82,7 +82,7 @@
 // console.log(first.repeat(10))
 // console.log(first.repeat(0),"")  
 
-// let a="123453"
+let a="123453"
 
 // console.log(a.replace("3","123"))
 // // regex
@@ -118,7 +118,8 @@
 // console.log(a.trimStart().trimEnd())
 // console.log(a.trim())
 
-
+let d="1a234A*"
+console.log(d.charCodeAt(6))
 
 
 
