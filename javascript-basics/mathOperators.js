@@ -96,4 +96,33 @@ console.log(Math.cbrt(8))
 
 
 
+let fruits=["apple","banana","cherry"]
 
+for(let fruit of fruits){
+
+    if(fruit.startsWith("a")){
+        continue
+    }
+    console.log(fruit)
+}
+
+let someString="string"
+
+for(let char of someString){
+
+    if(char==="r"){
+        break
+    }
+    console.log(char)
+}
+
+
+let a=12.340982340809234134123412423423
+
+console.log(a.toFixed(4))
+
+console.log(parseInt(a))
+console.log(parseFloat(a).toFixed(2))
+console.log(Number(1.221312312.toFixed(4)))
+console.log(1.23145123.toPrecision(5))
+console.log(Math.round(1.23))

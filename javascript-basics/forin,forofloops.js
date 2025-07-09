@@ -3,6 +3,10 @@
 let fruits=["apple","banana","cherry"]
 
 for(let fruit of fruits){
+
+    if(fruit==="banana"){
+        continue
+    }
     console.log(fruit)
 }
 
