@@ -135,53 +135,53 @@ blueprint of the page js read/write
 
 // create and remove elements using javascript
 
-let div=document.getElementById("div-id")
-console.log(div)
+// let div=document.getElementById("div-id")
+// console.log(div)
 
-let newPara=document.createElement("li")
-newPara.textContent="this is created using javascript"
-
-
-// div.appendChild(newPara) 
-// div.append(newPara)
-// div.prepend(newPara)
-
-let removePara=document.getElementById("remove-id")
-removePara.remove()
-
-// document.body.appendChild(newPara)
-
-let thirdPara=document.getElementById("third-para")
-div.insertBefore(newPara,thirdPara)
-
-let ul=document.querySelector("ul")
-let lis=document.querySelectorAll("ul li")
-console.log(lis)
-
-ul.insertBefore(newPara,lis[1])
-
-// traversing the dom
-
-// console.log(ul.parentElement)
-ul.parentElement.style.background="yellow"
-let data=ul.children
-
-// data.forEach((e)=>{
-//     e.style.color="blue"
-// })
+// let newPara=document.createElement("li")
+// newPara.textContent="this is created using javascript"
 
 
-for (let element of data){
-    element.style.color="blue"
-}
+// // div.appendChild(newPara) 
+// // div.append(newPara)
+// // div.prepend(newPara)
 
-console.log(ul.children)
+// let removePara=document.getElementById("remove-id")
+// removePara.remove()
 
-ul.nextElementSibling.nextElementSibling.previousElementSibling.style.fontStyle="italic"
+// // document.body.appendChild(newPara)
+
+// let thirdPara=document.getElementById("third-para")
+// div.insertBefore(newPara,thirdPara)
+
+// let ul=document.querySelector("ul")
+// let lis=document.querySelectorAll("ul li")
+// console.log(lis)
+
+// ul.insertBefore(newPara,lis[1])
+
+// // traversing the dom
+
+// // console.log(ul.parentElement)
+// ul.parentElement.style.background="yellow"
+// let data=ul.children
+
+// // data.forEach((e)=>{
+// //     e.style.color="blue"
+// // })
+
+
+// for (let element of data){
+//     element.style.color="blue"
+// }
+
+// console.log(ul.children)
+
+// ul.nextElementSibling.nextElementSibling.previousElementSibling.style.fontStyle="italic"
+// // ul.previousElementSibling.style.color="red"
 // ul.previousElementSibling.style.color="red"
-ul.previousElementSibling.style.color="red"
 
-console.log(ul.previousElementSibling)
+// console.log(ul.previousElementSibling)
 
 
 // let counter=1
@@ -219,6 +219,257 @@ console.log(ul.previousElementSibling)
 // })
 
 
+// events  -- signal that something has happened(click,keypress,load)
+
+
+// element.addEventListener("click",callbackfunction)
+
+
+
+// const btn=document.querySelector("button")
+
+
+// let counter=1
+// btn.addEventListener("click",(e)=>{
+//     // console.log(e.target)
+    
+//     console.log("button is clicked" + counter)
+//     counter++
+
+// })
+
+
+// // keydown,keyup,keypress
+// document.addEventListener("keyup",(e)=>{
+//     // console.log(e.target)
+//     // console.log(e.key)
+//     if(e.key==="Escape"){
+//         btn.style.color="blue"
+//     }else if(e.key==="a"){
+//         btn.style.color="red"
+//     }
+// })
+
+
+// let input=document.querySelector("input")
+
+
+// input.addEventListener("input",(e)=>{
+//     console.log(e.target.value)
+// })
+// // console.log(input.value)
+
+// // input.value="something"
+// // console.log(input.value)
+
+
+// // input.addEventListener("input",(e)=>{
+// //     console.log(e.target.value)
+// // })
+
+// // mouseover,mouseenter
+// btn.addEventListener("mouseenter",()=>{
+//     btn.style.backgroundColor="green"
+// })
+
+// // mouseout,mouseleave
+// btn.addEventListener("mouseleave",()=>{
+//     btn.style.background="transparent"
+// })
+
+
+// btn.addEventListener("mousedown",()=>{
+//     console.log("mouse down")
+// })
+
+// btn.addEventListener("mouseup",()=>{
+//     console.log("mouse up")
+// })
+
+// btn.addEventListener("dblclick",()=>{
+//     console.log("double click")
+// })
+
+// let form=document.querySelector("form")
+
+// let usernameInput=document.querySelector(".username")
+// let passwordInput=document.querySelector(".password")
+
+
+// let showButton=document.querySelector(".show")
+// showButton.addEventListener("click",()=>{
+
+//     if(passwordInput.getAttribute("type")==="text"){
+//          passwordInput.setAttribute("type","password")
+//          showButton.textContent="show"
+
+        
+//     }else if(passwordInput.getAttribute("type")==="password"){
+//         passwordInput.setAttribute("type","text")
+//         showButton.textContent="don't show"
+//     }
+   
+// })
+
+// let select=document.querySelector("select")
+
+// select.addEventListener("change",(e)=>{
+//     console.log(e.target.value)
+//     console.log("change event fired")
+// })
+
+
+
+
+// form.addEventListener("submit",(e)=>{
+//     e.preventDefault()
+//     console.log(usernameInput.value,passwordInput.value,select.value)
+// })
+
+let form=document.querySelector("form")
+// const emailField=document.querySelector(".email")
+// const passwordField=document.querySelector(".password")
+// // basic validation
+// const invalid=document.querySelector(".invalidEmail")
+
+// form.addEventListener("submit",(e)=>{
+//     e.preventDefault()
+//     const email=emailField.value.trim()
+//     const password=passwordField.value
+
+//     if(!email.includes("@") || !email.includes(".")){
+//         // alert("Invalid email address")
+//         invalid.textContent="invalid email address"
+//         return
+//     }
+//     invalid.textContent=""
+//     if(password.length<6){
+//         // alert("password must be atlease 6 characters")
+//         return
+//     }
+//     console.log(email,password)
+
+//     // console.log(emailField.value)
+//     // alert("form is submitted")
+//     emailField.value=""
+//     passwordField.value=""
+// })
+
+
+
+let sometasks=[{task:"go for a walk", completed:true},{task:"build a website",completed:false},{task:"build another website",completed:false}]
+
+
+let taskInput=document.querySelector(".text")
+
+
+sometasks.forEach((e)=>{
+    let task=document.createElement("li")
+    task.textContent=e.task
+
+      const delBtn=document.createElement("button")
+    delBtn.textContent="delete"
+        const editBtn=document.createElement("button")
+    editBtn.textContent="edit"
+    editBtn.classList.add("edit-class")
+    // delBtn.appendChild(editBtn)
+
+    delBtn.addEventListener("click",()=>task.remove())
+    editBtn.addEventListener("click",()=>{
+        task.remove()
+        taskInput.value=e.task
+        submitBtn.value="edit"
+        let childElements=[...div.children]
+        childElements.forEach((e)=>{
+            // e[0].setAttribute("disabled","")
+            console.log(e)
+            let children=[...e.children]
+            children[0].setAttribute("disabled","")
+            console.log(children)
+            // console.log(firstButton)
+            // firstButton.setAttribute("disabled","")
+        })
+        return
+    })
+        task.appendChild(editBtn)
+
+    task.appendChild(delBtn)
+        let div=document.querySelector("div")
+
+    if(!e.completed){
+        div.appendChild(task)
+    }
+})
+
+let submitBtn=document.querySelector(".some-class")
+submitBtn.value="add"
+
+
+
+
+
+
+
+submitBtn.addEventListener("click",()=>{
+    if(submitBtn.value==="edit"){
+        submitBtn.value="add"
+
+    }
+        document.querySelectorAll(".edit-class").forEach((e)=>{
+        console.log(e)
+        e.removeAttribute("disabled")
+    })
+    
+})
+form.addEventListener("submit",(e)=>{
+    e.preventDefault()
+    const task=taskInput.value.trim()
+    // if(task)
+
+    if(task==="") return
+    let div=document.querySelector("div")
+
+    const newTodo=document.createElement("li")
+    newTodo.textContent=task
+
+    const delBtn=document.createElement("button")
+    delBtn.textContent="delete"
+        const editBtn=document.createElement("button")
+    editBtn.textContent="edit"
+    editBtn.classList.add("edit-class")
+    // delBtn.appendChild(editBtn)
+
+    delBtn.addEventListener("click",()=>newTodo.remove())
+    editBtn.addEventListener("click",()=>{
+        newTodo.remove()
+        taskInput.value=task
+        submitBtn.value="edit"
+        let childElements=[...div.children]
+        childElements.forEach((e)=>{
+            // e[0].setAttribute("disabled","")
+            console.log(e)
+            let children=[...e.children]
+            children[0].setAttribute("disabled","")
+            console.log(children)
+            // console.log(firstButton)
+            // firstButton.setAttribute("disabled","")
+        })
+        return
+    })
+
+
+    
+
+    div.append(newTodo)
+    console.log(div)
+    newTodo.appendChild(editBtn)
+
+    newTodo.appendChild(delBtn)
+
+
+    taskInput.value=""
+
+})
 
 
 
