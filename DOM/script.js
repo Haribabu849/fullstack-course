@@ -389,7 +389,7 @@ sometasks.forEach((e)=>{
             // console.log(firstButton)
             // firstButton.setAttribute("disabled","")
         })
-        return
+        
     })
         task.appendChild(editBtn)
 
